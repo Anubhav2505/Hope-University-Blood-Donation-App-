@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Hope</string>
+    //Headings
+    <string name="heading_one">Check Eligibility</string>
+    <string name="heading_two">Schedule Appointment</string>
+    <string name="heading_three">Post a Blood Donation Request</string>
+    //Description
+    <string name="desc_one">Take a quick self assessment test to know if you are fit enough to donate blood by answering a few simple questions.</string>
+    <string name="desc_two">Schedule blood donation by picking available date and time slots according to your preference.</string>
+    <string name="desc_three">Request for blood to thousands of users from the University in a few quick simple steps.</string>
+    <string-array name="bloodgroups">
+        <item>Select your blood group</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+</resources>

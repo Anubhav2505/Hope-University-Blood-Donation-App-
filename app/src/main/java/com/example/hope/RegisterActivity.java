@@ -51,10 +51,6 @@ public class RegisterActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
     private DatabaseReference userDatabaserefer;
 
-    public void onLogin(View view){
-        Intent intent = new Intent(RegisterActivity.this,mainscreen.class);
-        startActivity(intent);
-    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

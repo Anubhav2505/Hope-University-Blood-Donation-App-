@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Home"
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_home_icon_bottomnav"/>
+    <item android:title="Event"
+        android:id="@+id/eventFragment"
+        android:icon="@drawable/ic_events_icon_bottomnav"/>
+    <item android:title="Appointment"
+        android:id="@+id/AppointmentFragment"
+        android:icon="@drawable/ic_appointment_icon"/>
+</menu>

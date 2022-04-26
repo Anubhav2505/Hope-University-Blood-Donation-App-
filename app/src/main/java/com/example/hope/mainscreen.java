@@ -37,7 +37,7 @@ public class mainscreen extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = mAuth.getCurrentUser();
                 if(user !=null){
-                    Intent intent = new Intent(mainscreen.this, HomeActivity.class);
+                    Intent intent = new Intent(mainscreen.this, MainLayout.class);
                     startActivity(intent);
                     finish();
                 }

@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Hope">
         <activity
+            android:name=".ResultSAneg"
+            android:exported="false" />
+        <activity
+            android:name=".ResultSA"
+            android:exported="false" />
+        <activity
+            android:name=".SelfAssessment"
+            android:exported="false" />
+        <activity
+            android:name=".splash_SelfAsses"
+            android:exported="false" />
+        <activity
+            android:name=".MainLayout"
+            android:exported="true" />
+        <activity
             android:name=".HomeActivity"
             android:exported="true" />
         <activity

@@ -9,10 +9,10 @@
     <color name="hint_grey">#808080</color>
     <color name="white">#FFFFFFFF</color>
     //onboarding colors
-    <color name="background">#F0F4F3</color>
     <color name="buttontext">#50C2C9</color>
 
     //indicator color
     <color name="inactive">#C4C4C4</color>
     <color name="active">#D1444A</color>
+    <color name="background">#FAF9F6</color>
 </resources>

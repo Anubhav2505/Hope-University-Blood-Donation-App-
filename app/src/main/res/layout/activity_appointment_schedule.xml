@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AppointmentSchedule">
+
+<TextView
+        android:id="@+id/simpletext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Schedule Appointment"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/simpletext"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/location" />
+
+
+    <Spinner
+        android:id="@+id/bankspin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/simpletext"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@id/location"
+        android:entries="@array/labnames"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/simpletext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/location"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:text="Pick a date"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editappoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/simpletext2"
+        android:layout_marginLeft="10dp"
+        android:drawableStart="@drawable/ic_events_icon_bottomnav"
+        android:drawablePadding="10dp"
+        android:drawableTint="@color/black"
+        android:ems="10"
+        android:focusable="false"
+        android:fontFamily="@font/poppins_light"
+        android:inputType="textPersonName"
+        android:text="    /     /"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/simpletext3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editappoint"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Pick a time slot"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/simpletext3"
+        android:layout_marginLeft="10dp"
+        android:backgroundTint="@color/white"
+        android:text="11:00 - 12:00"
+        android:textColor="@color/black"
+        app:icon="@drawable/time" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/simpletext3"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/btn1"
+        android:backgroundTint="#fff"
+        android:text="12:30 - 13:30"
+        android:textColor="@color/black"
+        app:icon="@drawable/time" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn1"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#fff"
+        android:text="14:00 - 15:00"
+        android:textColor="@color/black"
+        app:icon="@drawable/time" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/btn3"
+        android:backgroundTint="#fff"
+        android:text="15:30 - 16:30"
+        android:textColor="@color/black"
+        app:icon="@drawable/time" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#fff"
+        android:text="17:00 - 18:00"
+        android:textColor="@color/black"
+        app:icon="@drawable/time" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn4"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/btn3"
+        android:backgroundTint="#fff"
+        android:text="18:30 - 19:30"
+        android:textColor="@color/black"
+        app:icon="@drawable/time" />
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="391dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn5"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginRight="20dp"
+        android:text="CONFIRM"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:backgroundTint="#D1444A"
+        app:cornerRadius="10sp" />
+</RelativeLayout>

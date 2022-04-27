@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Hope">
         <activity
+            android:name=".Raise_BloodRequest"
+            android:exported="false" />
+        <activity
             android:name=".ResultSAneg"
             android:exported="false" />
         <activity

@@ -15,6 +15,7 @@ class Raise_BloodRequest : AppCompatActivity() {
     private var myRef = database.reference
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_raise_blood_request)
@@ -39,14 +40,8 @@ class Raise_BloodRequest : AppCompatActivity() {
         // Raising reqeuest data  which goes into DB for storing them
         raiseReq.setOnClickListener {
 
-            if(isGenuine.isChecked == false){
-                Toast.makeText(this, "Kindly Agree on Terms for Raising Request", Toast.LENGTH_SHORT).show()
-                return@setOnClickListener
-            }
-            dialog.show()
             myRef.child("Blood_Requests").push().setValue(RequestTemplate(patient_Name.text.toString(),blood_grp.selectedItem.toString(),
                 contact_details.text.toString(),req_Raiser.text.toString(),location.text.toString()))
-
 
 
         }

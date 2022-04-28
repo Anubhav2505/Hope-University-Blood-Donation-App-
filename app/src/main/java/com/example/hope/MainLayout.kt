@@ -60,7 +60,8 @@ class MainLayout : AppCompatActivity() {
         }
 
         raiseReqBtn.setOnClickListener {
-
+           val intent = Intent(this, Raise_BloodRequest::class.java)
+            startActivity(intent)
         }
 
         selfAssesBtn.setOnClickListener {
